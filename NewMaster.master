@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NewMaster.master.cs" Inherits="NewMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 98%;
+            height: 670px;
+        }
+        .auto-style2 {
+            height: 89px;
+        }
+        .auto-style5 {
+            height: 46px;
+            
+        }
+        .buttonp
+        {
+            background-color:transparent;
+            border-radius:4px;
+            font-size: medium;
+            font-family: 'Lithos Pro';
+            opacity:.9;
+           font-opacity:1;
+            transition:all .5s;
+            
+        }
+        .auto-style3 {
+            height: 420px;
+            border-radius:5px;
+        }
+        .auto-style4 {
+            height: 75px;
+            border-radius:8px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2" colspan="2" style="background-image: url('Kito 2.png')" bgcolor=""></td>
+                <td class="auto-style2" colspan="2" style="background-image: url('')" bgcolor=""></td>
+            </tr>
+            <tr>
+                <td class="auto-style5"><center>
+                    <asp:Button ID="Button1" runat="server" Text="HOME" Width="139px"  CssClass="buttonp" BorderWidth="0px" Height="38px" Font-Bold="true" PostBackUrl="./Home.aspx" CausesValidation="False"/>
+                </td>
+                <td class="auto-style5"><center>
+                    <asp:Button ID="Button10" runat="server" Text="ACTIVITY" Width="139px"  CssClass="buttonp" BorderWidth="0px" Height="38px" Font-Bold="true" PostBackUrl="./MainActivityPAge.aspx" CausesValidation="False"/>
+                    </center>
+                </td>
+                <td class="auto-style5"><center>
+                    <asp:Button ID="Button12" runat="server" Text="ABOUT" Width="139px"  CssClass="buttonp" BorderWidth="0px" Height="38px" Font-Bold="true" PostBackUrl="./AboutUs.aspx" CausesValidation="False"/>
+                    </center>
+                </td>
+                <td class="auto-style5"><center>
+                    <asp:Button ID="Button13" runat="server" Text="USER" Width="139px"  CssClass="buttonp" BorderWidth="0px" Height="38px" Font-Bold="true" CausesValidation="False" />
+
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" colspan="4" bgcolor="#F5F5F5">
+                    
+                    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4" colspan="4" bgcolor="#B0E0E6"><center>Copyright&nbsp; Kitomaro 2016</center></td>
+            </tr>
+        </table>
+    </div>
+    </form>
+    <form id="form1" runat="server">
+    <div>
+    </div>
+    </form>
+</body>
+</html>
